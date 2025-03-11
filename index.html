@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como Calcular IMC - Calculadora de Índice de Massa Corporal Online</title>
+  <!-- Meta Tags para SEO -->
+  <meta name="description" content="Aprenda como calcular o IMC (Índice de Massa Corporal) de forma rápida e gratuita. Use nossa calculadora de IMC online e descubra se você está no peso ideal para sua altura.">
+  <meta name="keywords" content="como calcular imc, calcular imc infantil, calcular imc corporal, calcular imc feminino, calcular imc masculino, calcular imc adulto, calcular imc criança, calcular imc bebê, calcular imc gestante, calcular imc atleta, calcular imc bariátrica">
+  <meta name="author" content="Como Calcular IMC">
+  <meta name="robots" content="index, follow">
+  <!-- Estilos CSS -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .header {
+      background-color: #1e8449; /* Verde 30% mais escuro */
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    .header h1 {
+      font-size: 32px;
+      margin: 0;
+      text-transform: uppercase; /* Título em maiúsculas */
+    }
+    .header h2 {
+      font-size: 24px;
+      margin: 10px 0 0;
+      color: white; /* Subtítulo em branco */
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    h2 {
+      font-size: 24px;
+      color: #34495e;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 16px;
+      color: #555;
+    }
+    input {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Topo do Site -->
+  <div class="header">
+    <h1>COMO CALCULAR IMC</h1>
+    <h2>Calculadora de IMC Online: Rápida e Grátis</h2>
+  </div>
+
+  <div class="container">
+    <!-- Calculadora de IMC -->
+    <h2>Calculadora de IMC Online</h2>
+    <p>Insira seu peso e altura para calcular seu Índice de Massa Corporal (IMC):</p>
+    <input type="number" id="peso" placeholder="Peso (kg)" step="0.1">
+    <input type="number" id="altura" placeholder="Altura (cm)">
+    <button onclick="calcularIMC()">Calcular IMC</button>
+    <div class="result" id="resultado"></div>
+
+    <!-- Tabela de Classificação de IMC -->
+    <table>
+      <thead>
+        <tr>
+          <th>IMC</th>
+          <th>Classificação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Abaixo de 18.5</td>
+          <td>Abaixo do peso</td>
+        </tr>
+        <tr>
+          <td>18.5 - 24.9</td>
+          <td>Peso normal</td>
+        </tr>
+        <tr>
+          <td>25 - 29.9</td>
+          <td>Sobrepeso</td>
+        </tr>
+        <tr>
+          <td>30 ou mais</td>
+          <td>Obesidade</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Conteúdo para SEO -->
+    <h2>Como Calcular o IMC?</h2>
+    <p>O IMC (Índice de Massa Corporal) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Ele é calculado dividindo o peso (em kg) pela altura ao quadrado (em metros).</p>
+    <p>Use nossa calculadora de IMC online para descobrir seu índice de forma rápida e gratuita. Basta inserir seu peso e altura nos campos acima e clicar em "Calcular IMC".</p>
+
+    <h2>Como Calcular o IMC para Crianças, Gestantes e Atletas?</h2>
+    <p>O cálculo do IMC para crianças, gestantes e atletas pode variar devido a fatores como crescimento, gravidez e massa muscular. Para esses casos, é recomendável consultar um médico ou nutricionista para uma avaliação mais precisa.</p>
+
+    <h2>Qual é o IMC Ideal?</h2>
+    <p>O IMC ideal varia de acordo com a idade, sexo e estilo de vida. Em geral, um IMC entre 18.5 e 24.9 é considerado saudável para adultos. Use nossa calculadora para verificar seu IMC e descubra se você está no peso ideal.</p>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>© 2023 Como Calcular IMC. Todos os direitos reservados.</p>
+      <p>
+        <a href="politica-de-privacidade.html">Política de Privacidade</a> | 
+        <a href="termos-de-uso.html">Termos de Uso</a>
+      </p>
+    </footer>
+  </div>
+
+  <!-- Script da Calculadora de IMC -->
+  <script>
+    function calcularIMC() {
+      const peso = parseFloat(document.getElementById('peso').value);
+      const altura = parseFloat(document.getElementById('altura').value) / 100; // Converter cm para m
+      const imc = (peso / (altura * altura)).toFixed(2);
+
+      let classificacao = '';
+      if (imc < 18.5) classificacao = 'Abaixo do peso';
+      else if (imc >= 18.5 && imc < 24.9) classificacao = 'Peso normal';
+      else if (imc >= 25 && imc < 29.9) classificacao = 'Sobrepeso';
+      else classificacao = 'Obesidade';
+
+      document.getElementById('resultado').innerHTML = `
+        Seu IMC é <strong>${imc}</strong>. <br>
+        Classificação: <strong>${classificacao}</strong>.
+      `;
+    }
+  </script>
+</body>
+</html>
